@@ -117,7 +117,7 @@ export const useGameStore = create<State>((set, get) => ({
             clearInterval(state.autoAiTimer)
         }
         
-        let countdown = 10
+        let countdown = 5
         set({ autoAiCountdown: countdown })
         
         const timer = setInterval(() => {
